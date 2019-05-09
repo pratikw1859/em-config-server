@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/spring_boot_db_1?autoReconnect=true&useSSL=false
+    username: root
+    password: root
+    
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      connection-timeout: 2000
+      auto-commit: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      format-sql: true
+#  jackson:
+#    serialization:
+#      FAIL_ON_EMPTY_BEANS: false
