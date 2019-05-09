@@ -17,6 +17,6 @@ spring:
       ddl-auto: create
     properties:
       format-sql: true
-#  jackson:
-#    serialization:
-#      FAIL_ON_EMPTY_BEANS: false
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
